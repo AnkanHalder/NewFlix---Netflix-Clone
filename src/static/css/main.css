@@ -1,0 +1,135 @@
+.ROW{
+    width: 100%;
+}
+
+.bigVideoCarouselContainer{
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.videoDetails {
+    width: 100%;
+    height: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    z-index: 5;
+    margin: 2rem;
+    font-size: 2rem;
+    background-color: #00000098;
+}
+.videoDetails h1{
+    margin-top: 20%;
+    text-align: center;
+}
+
+
+.bigVideoContainer {
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.bigVideo {
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start:1;
+}
+
+.bigVideoCarousel .videoElement{
+    display: grid;
+}
+
+.bigVideoCarousel .videoSetterButton{
+    position: relative;
+    margin: 0.4rem;;
+    z-index: 5;
+    height: 1rem;
+    width: 1rem;
+    background-color: #ededed;
+    border-radius: 50%;
+}
+
+.bigVideoCarousel .videoSetter{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.bigVideoCarousel .activeVideoBtn{
+    background-color: #ed0c50;
+
+}
+
+.bigVideoCarousel {
+    margin-left: 25% ;
+    margin-bottom: 3%;
+    width: 50%;
+    grid-row-start: 1;
+    grid-column-start:1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+
+
+.videoElementRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.videoElement {
+    max-width: 25%;
+    padding : 0.5rem;
+}
+
+.videoElement a {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+}
+.videoElement:hover {
+    width: 350%;
+}
+.videoElement img {
+    width: 100%;
+}
+
+.videoElement .videoImg , .videoElement .videoTitleDiv {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.videoElement .videoTitleDiv{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    opacity: 0;
+}
+.videoElement:hover .videoTitleDiv{
+    opacity: 0.6;
+}
+
+.catagoryName {
+    margin: 0.5rem 2.2rem;
+}
+
+.videoElement:hover {
+    border: 0.5rem solid #fff;
+}
+
+.LeftSlideBtn, .RightSlideBtn {
+    margin: 0.5rem;
+    width: 1rem;
+    height: 7rem;
+    color: #fff;
+}
+
+

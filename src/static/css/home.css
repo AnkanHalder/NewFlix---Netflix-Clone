@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
+  }
+.Home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+.content{
+  position: relative;
+  text-align: center;
+
+}
+
+.homeHeading{
+  font-size: 3em;
+}
+
+.textSpan::before{
+  content: "UNIQUE!!";
+  color: #E0144C;
+  animation: switchWord 8s infinite linear, switchColor 8s infinite linear ;
+
+}
+
+@keyframes switchWord{
+  0% {content : "UNIQUE!!"}
+  20% {content : "HANDPICKED!!"}
+  40% {content: "TOUCHING!!"}
+  60% {content: "INTENSE!!"}
+  80% {content: "CHARISMATICS!!"}
+}
+
+@keyframes switchColor {
+  0% {color : #E0144C}
+20% { color: #FEDB39}
+40% {color: #6FEDD6}
+60% {color: #66BFBF}
+80% {color: #533483}
+}
+
+
+.Text{
+  text-align: center;
+  margin: 3.5em;
+  
+}
+
+.Text h1{
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+.signIn {
+  height: 60px;
+  width: 190px;
+  background-color: transparent;
+  color: #E0144C;
+  border: solid 4px #E0144C;
+}
